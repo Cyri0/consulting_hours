@@ -7,7 +7,6 @@ dotenv.config()
 const app: Express = express()
 const port = process.env.PORT
 
-
 app.use(express.static(path.join(__dirname, '../../frontend/dist')));
 
 app.get('/', (req, res) => {
